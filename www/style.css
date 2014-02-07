@@ -1,0 +1,202 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    color: white;
+    background-color: rgb(74,172,197);
+    margin: 15px;
+}
+
+/* full page border trick START*/
+#top, #bottom, #left, #right {
+	background: rgb(242,242,242);
+	position: fixed;
+}
+    
+#left, #right {
+    top: 0; bottom: 0;
+    width: 5px;
+}
+
+#left { 
+    left: 0; 
+}
+
+#right { 
+    right: 0; 
+}
+    
+#top, #bottom {
+    left: 0; 
+    right: 0;
+    height: 5px;
+}
+    
+#top { 
+    top: 0; 
+}
+
+#bottom { 
+    bottom: 0; 
+}
+/* full page border trick END*/
+        
+header {      
+    text-align: right;
+}
+
+header form {      
+    color: black;
+}
+
+/* Placeholder color */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: black;
+}
+
+input[type="button"] { 
+    color: white;
+    border-color: rgb(242,242,242);
+    border-width: 4px;
+    border-radius: 7px;
+    box-shadow: 3px 3px rgb(55,117,147); 
+    background: rgb(79,129,189); 
+}
+
+#ex1 input[type="button"] {
+    width: 80px;
+}
+
+#ex2 input[type="button"]:not([id="OK"]) {
+    width: 100%;
+}
+
+#main_content {
+    margin: 20px;
+}
+
+#main_content img {
+    float: right;
+    margin: 2em;
+    height: 200px;
+    width: 200px;
+    padding: 2em;
+    
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); /* IE 9 */
+    -webkit-transform:rotate(7deg); /* Safari and Chrome */
+}
+
+#main_content table {
+    border-collapse:collapse;
+}
+
+#main_content table, caption, th, td {
+    border: 1px solid navy;
+}
+
+#main_content caption, th {
+    font-weight: bold;
+    color: #ffc;
+}
+
+#main_content p {
+    color: navy;
+}
+
+footer {
+    font-size: 1.25em;
+    margin: 20px;
+}
+
+h1 {
+    color: #ffc;
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:link {
+    -o-transition: .5s; /* Multiple browser support */
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s ;
+}
+
+a:hover {
+    color: hsl(36,100%,50%);
+}
+
+hr {
+    border-color: black; /* Multiple browser support */
+    color: black;
+    background-color: black;
+    clear: both;
+}
+
+.invisible {
+    display:none;
+}
+
+.popup {
+    position: absolute;
+    background-color: white;
+    border: 2px solid navy;
+    margin-top: 15px;
+    text-align: center;
+    width:10%;
+    z-index:10;
+    color: navy;
+    padding: 5px 5px 5px 5px;
+    right: 45%;
+    left: 45%;
+    top: 55%;
+}   
+
+#calculator {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+    width:50%;
+    text-align: center;
+    border: 0px;
+}
+
+#calculator caption, td {
+    font-weight: bold;
+    border: 0px;
+}
+
+#calculator td {
+    width: 15%;
+}
+
+#screen {
+    color: black;
+    border: 5px solid orange;
+    background: white; 
+}
+
+#inputBox {
+    color: black;
+    border: 5px solid green;
+    background: white; 
+}
+
